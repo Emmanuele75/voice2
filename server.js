@@ -36,5 +36,5 @@ app.get("/audio", (req, res) =>
   res.sendFile(path.resolve(__dirname, "./audio_client.html"))
 );
 app.listen(HTTP_PORT, () =>
-  console.log(`HTTP listening on port ${port}!`)
+  console.log(`HTTP listening on port ${HTTP_PORT}!`)
 );
