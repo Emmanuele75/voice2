@@ -100,7 +100,7 @@
             //sampleRate: 16000,
             sampleRate: 44100,
         });
-        const WS_URL = 'ws:///localhost:10000'  //localhost
+        const WS_URL = 'ws:///0.0.0.0:10000'  //localhost
         var ws = new WebSocket(WS_URL)
         ws.binaryType = 'arraybuffer'
         ws.addEventListener('message', function (event) {
