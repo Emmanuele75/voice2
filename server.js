@@ -44,5 +44,5 @@ app.get("/audio", (req, res) =>
   res.sendFile(path.resolve(__dirname, "./audio_client.html"))
 );
 app.listen(HTTP_PORT, () =>
-  console.log(`HTTP server listening at http://localhost:${HTTP_PORT}`)
+  console.log(`HTTP server listening at http://voice2-bl4f.onrender.com:80`)
 );
