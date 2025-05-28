@@ -100,7 +100,7 @@
             //sampleRate: 16000,
             sampleRate: 44100,
         });
-        const WS_URL = 'ws:///192.168.1.66:8888'
+        const WS_URL = 'ws:///localhost:80'
         var ws = new WebSocket(WS_URL)
         ws.binaryType = 'arraybuffer'
         ws.addEventListener('message', function (event) {
