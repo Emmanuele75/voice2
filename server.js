@@ -3,11 +3,13 @@ const express = require("express");
 const WebSocket = require("ws");
 const app = express();
 
-const WS_PORT = process.env.WS_PORT || 8888; //8888
+//const WS_PORT = process.env.WS_PORT || 8888; //8888
+const port = process.env.PORT || 8888; //8888
 const HTTP_PORT = process.env.HTTP_PORT || 8000; //8000
 
-const wsServer = new WebSocket.Server({ port: WS_PORT }, () =>
-  console.log(`WS server is listening at ws://localhost:${WS_PORT}`)
+//const wsServer = new WebSocket.Server({ port: WS_PORT }, () =>
+const wsServer = new WebSocket.Server({ port: port }, () =>
+  console.log(`WS server is listening at ws://localhost:${port}`)
 );
 
 // array of connected websocket clients
