@@ -7,7 +7,7 @@ const app = express();
 //const HTTP_PORT = process.env.HTTP_PORT || 8000; //8000
 
 const PORT = process.env.PORT || 8888; //8888
-const HTTP_PORT = process.env.PORT || 8000; //8000
+const HTTP_PORT = process.env.HTTP_PORT || 8000; //8000
 
 
 const wsServer = new WebSocket.Server({ port: PORT }, () =>
