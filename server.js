@@ -12,7 +12,7 @@ const WebSocket = require("ws");
 const app = express();
 
 const WS_PORT = process.env.WS_PORT || 8888;
-const HTTP_PORT = process.env.HTTP_PORT || 80;
+const HTTP_PORT = process.env.HTTP_PORT || 8000;
 
 const wsServer = new WebSocket.Server({ port: WS_PORT }, () =>
   console.log(`WS server is listening at ws://localhost:${WS_PORT}`)
@@ -44,5 +44,5 @@ app.get("/audio", (req, res) =>
   res.sendFile(path.resolve(__dirname, "./audio_client.html"))
 );
 app.listen(HTTP_PORT, () =>
-  console.log(`HTTP server listening at http://voice2-bl4f.onrender.com:80`)
+  console.log(`HTTP server listening at localhost`)
 );
